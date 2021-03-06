@@ -511,6 +511,7 @@ bool SymbolizerProcess::Restart() {
 }
 
 bool SymbolizerProcess::ReadFromSymbolizer(char *buffer, uptr max_length) {
+  Report("TEST WARNING");
   if (max_length == 0)
     return true;
   uptr read_len = 0;
